@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoL Offmeta BOT Duo Random</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- タブボタン -->
+    <div id="tabs">
+      <button data-tab="random">ランダムピック</button>
+      <button data-tab="list">一覧</button>
+      <button data-tab="history">履歴</button>
+    </div>
+
+   <!-- Random タブ -->
+<div id="randomTab" class="tab">
+  <div class="random-layout">
+    <!-- 左側：結果だけ -->
+    <div class="random-left">
+      <section id="result" class="panel result-area">
+        <!-- JS で描画 -->
+      </section>
+    </div>
+
+    <!-- 右側：ボタン用パネル + フィルター + キャラ除外 -->
+    <div class="random-right">
+      <!-- ボタン用パネル -->
+      <section id="controlPanel" class="panel control-panel">
+        <div class="random-btn-area">
+          <button id="randomBtn">ランダムピック</button>
+        </div>
+        
+        <div id="countArea" class="count-area">
+          条件に合致するデュオ：0件
+        </div>
+      </section>
+
+      <!-- フィルター -->
+      <section id="filters" class="panel">
+        <!-- JS で動的生成 -->
+      </section>
+
+      <!-- キャラ除外UI -->
+      <section id="excludeArea" class="panel">
+        <h2 class="panel-title">キャラ除外</h2>
+        <input
+          id="excludeSearch"
+          type="text"
+          placeholder="キャラ名検索（部分一致）"
+        >
+        <div id="excludeSuggest" class="exclude-suggest"></div>
+        <div id="excludeList" class="exclude-list"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+    <!-- List タブ（全デュオ一覧） -->
+    <div id="listTab" class="tab">
+      <!-- JS で .duo-card を並べる -->
+    </div>
+
+    <!-- History タブ（履歴） -->
+    <div id="historyTab" class="tab">
+      <!-- JS で .history-item を並べる -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+/* 全体レイアウト */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #111418;
+  color: #e5e7eb;
+  line-height: 1.6;
+  padding: 16px;
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* タブボタン */
+#tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#tabs button {
+  flex: 1;
+  padding: 8px 0;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #e5e7eb;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#tabs button:hover {
+  background: #1f2937;
+}
+
+/* タブコンテンツ */
+.tab {
+  display: none; /* JS で切り替え */
+}
+
+/* パネル共通 */
+.panel {
+  border: 1px solid #374151;
+  background: #0b1120;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.panel-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #9ca3af;
+}
+
+/* フィルター */
+.filter-group {
+  margin-bottom: 8px;
+}
+
+.filter-title {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #9ca3af;
+}
+
+.filter-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-title {
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #9ca3af;
+}
+
+/* ラベル全体（クリック範囲） */
+.filter-item {
+  cursor: pointer;
+}
+
+/* 本物のチェックボックスは隠す */
+.filter-item input {
+  display: none;
+}
+
+/* 見た目のボタン部分 */
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 12px;
+}
+
+/* チェックされたときの見た目 */
+.filter-item input:checked + .filter-pill {
+  background: #b91c1c;   /* 好きな色に変更可 */
+  border-color: #f97316;
+  color: #fef2f2;
+}
+
+/* 除外エリア */
+#excludeArea input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+#excludeArea input:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+ .exclude-suggest {
+  display: flex;        /* 横並びのベース */
+  flex-wrap: wrap;      /* はみ出したら折り返し */
+  gap: 8px;             /* カード同士の間隔 */
+  margin-top: 6px;
+}
+ 
+ .exclude-suggest-item {
+  display: flex;
+  flex-direction: column; /* 縦方向に並べる */
+  align-items: center;    /* 中央に寄せる */
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 4px;
+  background: #111827;
+  border: 1px solid #4b5563;
+  font-size: 12px;
+  cursor: pointer;
+}
+ 
+ .exclude-suggest-item:hover {
+   background: #1f2937;
+ }
+ 
+ .exclude-list {
+   margin-top: 4px;
+ }
+ 
+ .exclude-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.exclude-chip {
+  display: flex;
+  flex-direction: column;  /* 画像 → 名前 */
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+
+  background: #7f1d1d;     /* 暗めの赤 */
+  border: 1px solid #b91c1c;
+  color: #fef2f2;
+
+  font-size: 11px;
+  cursor: pointer;
+  min-width: 72px;         /* カード幅（候補と合わせる） */
+}
+
+.exclude-chip:hover {
+  background: #991b1b;
+}
+ 
+ /* 件数表示＋ボタン */
+ .count-area {
+  margin-top: 4px;
+  font-size: 12px;      /* 少し小さく */
+  text-align: center;   /* 真ん中表示 */
+  color: #9ca3af;       /* ほんの少し薄めにするなら */
+}
+ 
+ .random-btn-area {
+  display: flex;
+  justify-content: center; /* 横方向の中央寄せ */
+  width: 100%;
+}
+
+ #randomBtn {
+  padding: 10px 60px;      /* 横長に */
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 200px;        /* これでさらに横幅を確保 */
+}
+
+ #randomBtn:hover {
+  background: #1d4ed8;
+}
+ 
+ /* 結果表示 */
+ .result-area {
+   min-height: 80px;
+ }
+ 
+ .result-card {
+   border: 1px solid #4b5563;
+   border-radius: 6px;
+   padding: 8px;
+   background: #020617;
+   font-size: 14px;
+ }
+ 
+ .line {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   margin-bottom: 4px;
+ }
+ 
+ .champ-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 2px;      /* 画像と名前の間 */
+}
+ 
+ .result-card div {
+   margin-bottom: 2px;
+ }
+ 
+ /* List タブ（全デュオ一覧） */
+#listTab {
+  /* display は JS 側で grid を指定するので書かない */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* スクロール調整は今のままでOK */
+#listTab,
+#historyTab {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+ .duo-card {
+   border: 1px solid #374151;
+   background: #020617;
+   border-radius: 6px;
+   padding: 8px;
+   margin-bottom: 8px;
+   font-size: 13px;
+ }
+ 
+ .duo-card .line {
+   margin-bottom: 4px;
+ }
+ 
+ .meta {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 6px;
+   font-size: 12px;
+   color: #9ca3af;
+   margin-bottom: 4px;
+ }
+ 
+ .comment {
+   font-size: 12px;
+   color: #e5e7eb;
+ }
+ 
+ /* History タブ（履歴） */
+ #historyTab {
+   display: none; /* 初期は非表示。JS が制御 */
+ }
+ 
+ .history-item {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   padding: 4px 0;
+   border-bottom: 1px solid #111827;
+   font-size: 13px;
+ }
+ 
+ .history-item .index {
+   width: 24px;
+   color: #9ca3af;
+ }
+ 
+ /* スクロール調整（長くなったとき用） */
+ #listTab,
+ #historyTab {
+   max-height: 70vh;
+   overflow-y: auto;
+ }
+
+ .result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tag-pill {
+  padding: 4px 10px;
+  background: #111827;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #e5e7eb;
+}
+
+.result-comment {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.random-layout {
+  display: flex;
+  gap: 16px;
+}
+
+/* 左右半分ずつ */
+.random-left,
+.random-right {
+  flex: 1;
+}
+
+/* 右側のパネルを縦に並べる */
+.random-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 結果パネルはある程度高さを確保しておくとバランスが良い */
+.result-area {
+  min-height: 200px;
+}
+
+/* 画面が狭いときは縦並びに戻す（おまけ） */
+@media (max-width: 900px) {
+  .random-layout {
+    flex-direction: column;
+  }
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ランダム結果：左右レイアウト */
+.duo-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.duo-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  background: #d3d3d3;
+  border-radius: 6px;
+}
+
+.duo-name {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.duo-x {
+  font-size: 48px;
+  color: #aaa;
+}
+
