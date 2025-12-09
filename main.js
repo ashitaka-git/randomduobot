@@ -86,7 +86,7 @@ const DUOS = [
   {
     bot: "ミスフォーチュン",
     sup: "シンドラ",
-    botIcon: "img/Missfortune.png",
+    botIcon: "img/Misfortune.png",
     supIcon: "img/Syndra.png",
     difficulty: 1,
     troll: 1,
