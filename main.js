@@ -1,13 +1,13 @@
-// main.js
-// =============================
-// デュオデータ（サンプルだけ。ここに全部追加していく）
-// =============================
+  // main.js
+  // =============================
+  // デュオデータ（サンプルだけ。ここに全部追加していく）
+  // =============================
 const DUOS = [
-  {
+    {
     bot: "ヨネ",
     sup: "ヤスオ",
-    botIcon: "img/yone.png",
-    supIcon: "img/yasuo.png",
+    botIcon: "img/Yone.png",
+    supIcon: "img/Yasuo.png",
     difficulty: 3,
     troll: 3,
     offmeta: 3,
@@ -16,8 +16,8 @@ const DUOS = [
   {
     bot: "ヤスオ",
     sup: "グラガス",
-    botIcon: "img/yasuo.png",
-    supIcon: "img/gragas.png",
+    botIcon: "img/Yasuo.png",
+    supIcon: "img/Gragas.png",
     difficulty: 3,
     troll: 2,
     offmeta: 2,
@@ -26,8 +26,8 @@ const DUOS = [
   {
     bot: "ジグス",
     sup: "ベイガー",
-    botIcon: "img/ziggs.png",
-    supIcon: "img/veigar.png",
+    botIcon: "img/Ziggs.png",
+    supIcon: "img/Veigar.png",
     difficulty: 1,
     troll: 1,
     offmeta: 1,
@@ -36,8 +36,8 @@ const DUOS = [
   {
     bot: "ヴェイン",
     sup: "アニビア",
-    botIcon: "img/vayne.png",
-    supIcon: "img/anivia.png",
+    botIcon: "img/Vayne.png",
+    supIcon: "img/Anivia.png",
     difficulty: 2,
     troll: 1,
     offmeta: 1,
@@ -46,8 +46,8 @@ const DUOS = [
   {
     bot: "レンガー",
     sup: "アイバーン",
-    botIcon: "img/rengar.png",
-    supIcon: "img/ivern.png",
+    botIcon: "img/Rengar.png",
+    supIcon: "img/Ivern.png",
     difficulty: 3,
     troll: 3,
     offmeta: 3,
@@ -56,8 +56,8 @@ const DUOS = [
   {
     bot: "タリヤ",
     sup: "パンテオン",
-    botIcon: "img/taliyah.png",
-    supIcon: "img/pantheon.png",
+    botIcon: "img/Taliyah.png",
+    supIcon: "img/Pantheon.png",
     difficulty: 1,
     troll: 1,
     offmeta: 2,
@@ -66,8 +66,8 @@ const DUOS = [
   {
     bot: "オレソル",
     sup: "イラオイ",
-    botIcon: "img/aurelionsol.png",
-    supIcon: "img/illaoi.png",
+    botIcon: "img/Aurelionsol.png",
+    supIcon: "img/Illaoi.png",
     difficulty: 1,
     troll: 2,
     offmeta: 3,
@@ -76,8 +76,8 @@ const DUOS = [
   {
     bot: "ラックス",
     sup: "ゾーイ",
-    botIcon: "img/lux.png",
-    supIcon: "img/zoe.png",
+    botIcon: "img/Lux.png",
+    supIcon: "img/Zoe.png",
     difficulty: 1,
     troll: 1,
     offmeta: 1,
@@ -86,8 +86,8 @@ const DUOS = [
   {
     bot: "ミスフォーチュン",
     sup: "シンドラ",
-    botIcon: "img/missfortune.png",
-    supIcon: "img/syndra.png",
+    botIcon: "img/Missfortune.png",
+    supIcon: "img/Syndra.png",
     difficulty: 1,
     troll: 1,
     offmeta: 1,
@@ -96,8 +96,8 @@ const DUOS = [
   {
     bot: "トリンダメア",
     sup: "ユーミ",
-    botIcon: "img/tryndamere.png",
-    supIcon: "img/yuumi.png",
+    botIcon: "img/Tryndamere.png",
+    supIcon: "img/Yuumi.png",
     difficulty: 2,
     troll: 3,
     offmeta: 2,
@@ -106,8 +106,8 @@ const DUOS = [
   {
     bot: "カタリナ",
     sup: "タリック",
-    botIcon: "img/katarina.png",
-    supIcon: "img/taric.png",
+    botIcon: "img/Katarina.png",
+    supIcon: "img/Taric.png",
     difficulty: 3,
     troll: 2,
     offmeta: 2,
@@ -116,8 +116,8 @@ const DUOS = [
   {
     bot: "サイラス",
     sup: "タリック",
-    botIcon: "img/sylas.png",
-    supIcon: "img/taric.png",
+    botIcon: "img/Sylas.png",
+    supIcon: "img/Taric.png",
     difficulty: 3,
     troll: 2,
     offmeta: 2,
@@ -126,8 +126,8 @@ const DUOS = [
   {
     bot: "サイオン",
     sup: "チョガス",
-    botIcon: "img/sion.png",
-    supIcon: "img/chogath.png",
+    botIcon: "img/Sion.png",
+    supIcon: "img/Chogath.png",
     difficulty: 3,
     troll: 3,
     offmeta: 3,
@@ -136,8 +136,8 @@ const DUOS = [
   {
     bot: "セナ",
     sup: "サイオン",
-    botIcon: "img/senna.png",
-    supIcon: "img/sion.png",
+    botIcon: "img/Senna.png",
+    supIcon: "img/Sion.png",
     difficulty: 2,
     troll: 2,
     offmeta: 2,
@@ -146,8 +146,8 @@ const DUOS = [
   {
     bot: "オリアナ",
     sup: "シャコ",
-    botIcon: "img/orianna.png",
-    supIcon: "img/shaco.png",
+    botIcon: "img/Orianna.png",
+    supIcon: "img/Shaco.png",
     difficulty: 2,
     troll: 2,
     offmeta: 3,
@@ -156,8 +156,8 @@ const DUOS = [
   {
     bot: "カシオペア",
     sup: "ティーモ",
-    botIcon: "img/cassiopeia.png",
-    supIcon: "img/teemo.png",
+    botIcon: "img/Cassiopeia.png",
+    supIcon: "img/Teemo.png",
     difficulty: 1,
     troll: 2,
     offmeta: 3,
@@ -166,8 +166,8 @@ const DUOS = [
   {
     bot: "カシオペア",
     sup: "シンジド",
-    botIcon: "img/cassiopeia.png",
-    supIcon: "img/singed.png",
+    botIcon: "img/Cassiopeia.png",
+    supIcon: "img/Singed.png",
     difficulty: 2,
     troll: 2,
     offmeta: 3,
@@ -176,8 +176,8 @@ const DUOS = [
   {
     bot: "ダイアナ",
     sup: "オリアナ",
-    botIcon: "img/diana.png",
-    supIcon: "img/orianna.png",
+    botIcon: "img/Diana.png",
+    supIcon: "img/Orianna.png",
     difficulty: 2,
     troll: 2,
     offmeta: 3,
@@ -186,8 +186,8 @@ const DUOS = [
   {
     bot: "ブランド",
     sup: "ナミ",
-    botIcon: "img/brand.png",
-    supIcon: "img/nami.png",
+    botIcon: "img/Brand.png",
+    supIcon: "img/Nami.png",
     difficulty: 1,
     troll: 1,
     offmeta: 1,
@@ -196,8 +196,8 @@ const DUOS = [
   {
     bot: "サイオン",
     sup: "スウェイン",
-    botIcon: "img/sion.png",
-    supIcon: "img/swain.png",
+    botIcon: "img/Sion.png",
+    supIcon: "img/Swain.png",
     difficulty: 2,
     troll: 3,
     offmeta: 2,
@@ -206,8 +206,8 @@ const DUOS = [
   {
     bot: "ケネン",
     sup: "アムム",
-    botIcon: "img/kennen.png",
-    supIcon: "img/amumu.png",
+    botIcon: "img/Kennen.png",
+    supIcon: "img/Amumu.png",
     difficulty: 2,
     troll: 3,
     offmeta: 3,
@@ -216,8 +216,8 @@ const DUOS = [
   {
     bot: "アジール",
     sup: "セト",
-    botIcon: "img/azir.png",
-    supIcon: "img/sett.png",
+    botIcon: "img/Azir.png",
+    supIcon: "img/Sett.png",
     difficulty: 3,
     troll: 3,
     offmeta: 3,
@@ -226,8 +226,8 @@ const DUOS = [
   {
     bot: "キンドレッド",
     sup: "タリック",
-    botIcon: "img/kindred.png",
-    supIcon: "img/taric.png",
+    botIcon: "img/Kindred.png",
+    supIcon: "img/Taric.png",
     difficulty: 2,
     troll: 2,
     offmeta: 3,
@@ -236,8 +236,8 @@ const DUOS = [
   {
     bot: "ヨリック",
     sup: "ジリアン",
-    botIcon: "img/yorick.png",
-    supIcon: "img/zilean.png",
+    botIcon: "img/Yorick.png",
+    supIcon: "img/Zilean.png",
     difficulty: 2,
     troll: 3,
     offmeta: 3,
@@ -246,8 +246,8 @@ const DUOS = [
   {
     bot: "トゥイッチ",
     sup: "シャコ",
-    botIcon: "img/twitch.png",
-    supIcon: "img/shaco.png",
+    botIcon: "img/Twitch.png",
+    supIcon: "img/Shaco.png",
     difficulty: 2,
     troll: 2,
     offmeta: 2,
@@ -256,8 +256,8 @@ const DUOS = [
   {
     bot: "ライズ",
     sup: "タムケンチ",
-    botIcon: "img/ryze.png",
-    supIcon: "img/tahmkench.png",
+    botIcon: "img/Ryze.png",
+    supIcon: "img/Tahmkench.png",
     difficulty: 2,
     troll: 2,
     offmeta: 3,
@@ -266,8 +266,8 @@ const DUOS = [
   {
     bot: "ブライアー",
     sup: "アニビア",
-    botIcon: "img/briar.png",
-    supIcon: "img/anivia.png",
+    botIcon: "img/Briar.png",
+    supIcon: "img/Anivia.png",
     difficulty: 3,
     troll: 3,
     offmeta: 3,
@@ -276,8 +276,8 @@ const DUOS = [
   {
     bot: "ガリオ",
     sup: "ザック",
-    botIcon: "img/galio.png",
-    supIcon: "img/zac.png",
+    botIcon: "img/Galio.png",
+    supIcon: "img/Zac.png",
     difficulty: 2,
     troll: 3,
     offmeta: 2,
@@ -286,8 +286,8 @@ const DUOS = [
   {
     bot: "タムケンチ",
     sup: "チョガス",
-    botIcon: "img/tahmkench.png",
-    supIcon: "img/chogath.png",
+    botIcon: "img/Tahmkench.png",
+    supIcon: "img/Chogath.png",
     difficulty: 2,
     troll: 3,
     offmeta: 2,
@@ -296,8 +296,8 @@ const DUOS = [
   {
     bot: "タリヤ",
     sup: "ポッピー",
-    botIcon: "img/taliyah.png",
-    supIcon: "img/poppy.png",
+    botIcon: "img/Taliyah.png",
+    supIcon: "img/Poppy.png",
     difficulty: 2,
     troll: 1,
     offmeta: 2,
@@ -306,14 +306,13 @@ const DUOS = [
   {
     bot: "シンドラ",
     sup: "ベイガー",
-    botIcon: "img/syndra.png",
-    supIcon: "img/veigar.png",
+    botIcon: "img/Syndra.png",
+    supIcon: "img/Veigar.png",
     difficulty: 1,
     troll: 1,
     offmeta: 2,
     comment: "シンドラのEでベイガーEを必中"
   },
-  // TODO: 実際のオフメタBOTデュオをここに追加していく
 ];
 
 // 名前 → アイコンパス
